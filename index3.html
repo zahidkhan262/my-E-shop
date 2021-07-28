@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | My-E-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b6c44059c.js"></script>
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="logo1.png" alt="logo" width="120px"></a>
+                </div>
+
+                <nav class="navi">
+                    <ul id="menuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#Products">Products</a></li>
+                        <li><a href="index.html">Testimonial</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#Account">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div id="bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- --------------Account Page--------------------- -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2" data-aos="fade-right" data-aos-easing="ease-out-cubic">
+                    <img src="carousel.png" alt="img">
+                </div>
+                <div class="col-2" data-aos="fade-left" data-aos-easing="ease-out-cubic">
+                    <div class="card">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="signup()">Signup</span>
+                            <hr id="indicate">
+                        </div>
+                        <form id="loginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="button" class="btn">Sign In</button>
+                            <a href="#">Forgot password ?</a>
+                        </form>
+                        <form id="signupForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="button" class="btn">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOs Device.</p>
+                    <div class="app-logo">
+                        <i class="fas fa-play"></i>
+                        <i class="fab fa-app-store-ios"></i>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo1.png" alt="logo" width="165px">
+                    <p>Our Purpose is to Sustainable make the pleasure<br> and benefits of My Shop Accessible to the
+                        many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Coupans</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Me</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a>Instagram</li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a>Twitter</li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a>LinkedIn</li>
+                        <li><a href="#"><i class="fab fa-github"></i></a>Github</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="arrow"><a href="#">&#8593;</a></span>
+            <p class="copyright">Copyright &#169; 2020 - <a href="https://linktr.ee/zahidkhan262/"
+                    target="_zahidkhan"><span> zahidkhan262</span></a></p>
+        </div>
+    </footer>
+
+    <!-- script -->
+
+    <script>
+        const toggle = document.getElementById('bar');
+        const navbar = document.getElementById('menuItems');
+
+
+        const loginForm = document.getElementById("loginForm");
+        const signupForm = document.getElementById("signupForm");
+        var indicate = document.getElementById("indicate");
+
+        function signup() {
+            signupForm.style.transform = "translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+            indicate.style.transform = "translateX(100px)";
+        }
+        function login() {
+            signupForm.style.transform = "translateX(300px)";
+            loginForm.style.transform = "translateX(300px)";
+            indicate.style.transform = "translateX(0px)";
+        }
+
+        toggle.onclick = function () {
+            toggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

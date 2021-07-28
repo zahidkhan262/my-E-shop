@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | My-E-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b6c44059c.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="logo1.png" alt="logo" width="120px"></a>
+                </div>
+               
+                <nav class="navi">
+                    <ul id="menuItems">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Products">Products</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#Account">Account</a></li>
+                    </ul>
+                </nav>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div id="bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="small-container" id="Products">
+        <h2 class="feature-title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="girl1.png" alt="img">
+                <h4>Red Printed Frock Suit</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="boy3.png" alt="img" height="200px">
+                <h4>Men Professional Suit</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-o"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>$80.00</p>
+            </div>
+            <div class="col-4">
+                <img src="watch1.png" alt="img">
+                <h4>Apple Watch</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>$300.00</p>
+            </div>
+            <div class="col-4">
+                <img src="shoes1.png" alt="img">
+                <h4>Sport Shoes for men</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>$60.00</p>
+            </div>
+        </div>   
+    </div>
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOs Device.</p>
+                    <div class="app-logo">
+                        <i class="fas fa-play"></i>
+                        <i class="fab fa-app-store-ios"></i>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo1.png" alt="logo" width="165px">
+                    <p>Our Purpose is to Sustainable make the pleasure<br> and benefits of My Shop Accessible to the
+                        many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Coupans</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Me</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a>Instagram</li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a>Twitter</li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a>LinkedIn</li>
+                        <li><a href="#"><i class="fab fa-github"></i></a>Github</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">Copyright &#169; 2020 - <a href="https://linktr.ee/zahidkhan262/"
+                    target="_zahidkhan"><span> zahidkhan262</span></a></p>
+        </div>
+    </footer>
+
+    <!-- script -->
+
+    <script>
+        const toggle= document.getElementById('bar');
+        const navbar= document.getElementById('menuItems');
+
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+
+    </script>
+</body>
+
+</html>
